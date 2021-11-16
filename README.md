@@ -25,8 +25,8 @@ server
 
 ## API Documentation
 
-- [API-Doc](https://jyoo0515.github.io/ApiDoc/)
-- Depolyed On: https://dashboard.heroku.com/apps/alt-text
+- [API-Doc](https://jyoo0515.github.io/UniD_API_Doc/)
+- Depolyed On: https://alt-text.herokuapp.com
 
 ## How to Start
 
