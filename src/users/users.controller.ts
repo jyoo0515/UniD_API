@@ -73,7 +73,6 @@ export class UsersController {
     res.cookie('access_token', jwt, {
       expires: new Date(new Date().getTime() + 6 * 60 * 60000), // 6 hours
       sameSite: 'strict',
-      domain: 'localhost',
       httpOnly: true,
     });
   }
