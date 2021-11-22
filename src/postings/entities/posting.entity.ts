@@ -19,7 +19,7 @@ export class Posting extends BaseEntity {
   @Column()
   text: string;
 
-  @ApiProperty()
+  @ApiProperty({ nullable: true })
   @Column({ nullable: true })
   imgPath: string;
 

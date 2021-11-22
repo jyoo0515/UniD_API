@@ -32,7 +32,9 @@ export class PostingsController {
   @ApiConsumes('multipart/form-data')
   @ApiOkResponse({ type: ReturnPostingDto })
   async createPosting(@Req() req, @UploadedFile() file: Express.Multer.File, @Body() body: CreatePostingDto): Promise<ReturnPostingDto> {
-    const posting = await this.postingsService.createPosting(body.text, body.category, file.path, req.user.id);
+    let path: string = null;
+    if (!file === undefined) path = file.path;
+    const posting = await this.postingsService.createPosting(body.text, body.category, path, req.user.id);
     return plainToClass(ReturnPostingDto, posting);
   }
 

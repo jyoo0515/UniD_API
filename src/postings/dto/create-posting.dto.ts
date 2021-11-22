@@ -12,6 +12,6 @@ export class CreatePostingDto {
   @IsString()
   category: string;
 
-  @ApiProperty()
+  @ApiProperty({ nullable: true })
   image?: Express.Multer.File;
 }
