@@ -40,7 +40,7 @@ $ cd server
 
 ```bash
 # db 변경사항이 github에 푸쉬되지 않도록
-git update-index --assume-unchanged dev.db
+$ git update-index --assume-unchanged dev.db
 ```
 
 #### Installation
